@@ -11,6 +11,8 @@ use Mirasvit\Blog\Model\Config;
 
 class DataProvider extends AbstractDataProvider
 {
+    public $status;
+    public $imageHelper;
     /**
      * @var PostRepositoryInterface
      */

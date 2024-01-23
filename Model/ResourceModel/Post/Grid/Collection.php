@@ -11,6 +11,7 @@ use Mirasvit\Blog\Model\ResourceModel\Post\Collection as PostCollection;
 
 class Collection extends PostCollection implements SearchResultInterface
 {
+    public $aggregations;
     const CAT_PROD_LINK_ALIAS = 'category_ids_table';
     const CAT_PROD_LINK       = 'mst_blog_category_post';
 

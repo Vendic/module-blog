@@ -9,6 +9,7 @@ use Mirasvit\Blog\Model\ResourceModel\Category\CollectionFactory;
 class Category extends AbstractHelper
 {
 
+    public $categoryCollectionFactory;
     /**
      * @param CollectionFactory $categoryCollectionFactory
      * @param Context                         $context

@@ -448,7 +448,7 @@ class Toolbar extends Template
         }
 
         $directions = ['asc', 'desc'];
-        $dir        = strtolower($this->toolbarModel->getDirection());
+        $dir        = strtolower((string)$this->toolbarModel->getDirection());
         if (!$dir || !in_array($dir, $directions)) {
             $dir = $this->direction;
         }

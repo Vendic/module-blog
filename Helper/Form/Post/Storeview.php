@@ -10,6 +10,11 @@ use Mirasvit\Blog\Model\Post;
 
 class Storeview extends AbstractHelper
 {
+    public $storeManager;
+    /**
+     * @var \Magento\Framework\App\Helper\Context
+     */
+    public $context;
     /**
      * @var array
      */

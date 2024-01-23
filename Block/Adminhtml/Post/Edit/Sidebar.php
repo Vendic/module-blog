@@ -14,6 +14,10 @@ use Zend_Locale_Exception;
 class Sidebar extends Template
 {
     /**
+     * @var \Magento\Framework\Locale\ResolverInterface
+     */
+    public $localeResolver;
+    /**
      * @var string
      */
     protected $_template = "post/edit/sidebar.phtml";

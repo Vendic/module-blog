@@ -12,6 +12,11 @@ use Mirasvit\Blog\Setup\InstallData\PostSetupFactory;
 
 class UpgradeData implements UpgradeDataInterface
 {
+    public $postSetupFactory;
+    /**
+     * @var Magento\Eav\Setup\EavSetupFactory
+     */
+    public $eavSetupFactory;
     public function __construct(PostSetupFactory $postSetupFactory, EavSetupFactory $eavSetupFactory)
     {
         $this->postSetupFactory = $postSetupFactory;

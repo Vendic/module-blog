@@ -12,6 +12,10 @@ use Mirasvit\Blog\Model\Post;
 class Meta extends Form
 {
     /**
+     * @var \Magento\Backend\Block\Widget\Context
+     */
+    public $context;
+    /**
      * @var FormFactory
      */
     protected $formFactory;

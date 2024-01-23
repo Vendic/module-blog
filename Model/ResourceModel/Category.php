@@ -100,7 +100,7 @@ class Category extends AbstractEntity
                 $category->setPosition($this->getMaxPosition($category->getPath()) + 1);
             }
 
-            $path          = explode('/', $category->getPath());
+            $path          = explode('/', $category->getPath() ?? '');
             $level         = count($path) - ($category->getId() ? 1 : 0);
             $toUpdateChild = array_diff($path, [$category->getId()]);
 
@@ -161,7 +161,7 @@ class Category extends AbstractEntity
     {
         /** @var \Mirasvit\Blog\Model\Category $object */
 
-        if (substr($object->getPath(), -1) == '/' || !$object->getPath()) {
+        if (substr((string)$object->getPath(), -1) == '/' || !$object->getPath()) {
             $object->setPath($object->getPath() . $object->getId());
             $this->savePath($object);
         }

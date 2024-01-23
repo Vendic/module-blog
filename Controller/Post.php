@@ -12,6 +12,14 @@ use Mirasvit\Blog\Model\PostFactory;
 abstract class Post extends Action
 {
     /**
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */
+    public $storeManager;
+    /**
+     * @var \Magento\Framework\App\Action\Context
+     */
+    public $context;
+    /**
      * @var PostFactory
      */
     protected $postFactory;

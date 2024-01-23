@@ -30,6 +30,10 @@ use Mirasvit\Blog\Api\Repository\TagRepositoryInterface;
  */
 class Post extends AbstractExtensibleModel implements IdentityInterface, PostInterface
 {
+    /**
+     * @var ImageFactory
+     */
+    public $imageFactory;
     const ENTITY    = 'blog_post';
     const CACHE_TAG = 'blog_post';
 

@@ -11,6 +11,10 @@ use Mirasvit\Blog\Model\CategoryFactory;
 abstract class Category extends Action
 {
     /**
+     * @var \Magento\Framework\App\Action\Context
+     */
+    public $context;
+    /**
      * @var CategoryFactory
      */
     protected $categoryFactory;
